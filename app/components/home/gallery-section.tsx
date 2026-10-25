@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Expand, X, Play } from "lucide-react";
+import { ArrowLeft, ArrowRight, Expand, X } from "lucide-react";
 import { galleryImages, homeContent } from "@/app/data/content";
 import {
   container,
@@ -20,7 +20,6 @@ import { Button } from "@/app/components/ui/button";
 
 export function GallerySection() {
   const [selected, setSelected] = useState<number | null>(null);
-  const [video, setVideo] = useState(false);
   const image = selected !== null ? galleryImages[selected] : null;
   const move = (direction: number) =>
     setSelected((current) =>
@@ -31,16 +30,8 @@ export function GallerySection() {
   return (
     <section id="gallery" className={`${sectionSpace} sacred-section relative isolate overflow-hidden text-cream`}>
       <div className={container}>
-        <div className="mb-11 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="mb-11">
           <SectionHeading {...homeContent.gallery} light />
-          <Button
-            variant="outline"
-            onClick={() => setVideo(true)}
-            className="h-12 w-fit gap-3 rounded-full border-gold/50 bg-transparent px-5 text-cream hover:bg-cream/10 hover:text-cream"
-          >
-            <Play className="size-4 text-saffron" />
-            पूजन की वीडियो झलक
-          </Button>
         </div>
         <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {galleryImages.map((item, i) => (
@@ -133,30 +124,6 @@ export function GallerySection() {
                 <ArrowRight />
               </Button>
             </div>
-          </DialogContent>
-        </Dialog>
-        <Dialog open={video} onOpenChange={setVideo}>
-          <DialogContent className="sm:max-w-3xl">
-            <DialogTitle className="pr-8 text-base leading-8 text-wine">
-              पूजन की वीडियो झलक
-            </DialogTitle>
-            <DialogDescription>
-              अनुष्ठान और सहभागिता का एक वास्तविक क्षण।
-            </DialogDescription>
-            {video && (
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="max-h-[65dvh] w-full rounded-lg bg-wine-dark"
-              >
-                <source
-                  src="/pujan/WhatsApp Video 2026-10-18 at 9.21.32 PM.mp4"
-                  type="video/mp4"
-                />
-                आपका ब्राउज़र इस वीडियो को नहीं चला सकता।
-              </video>
-            )}
           </DialogContent>
         </Dialog>
       </div>

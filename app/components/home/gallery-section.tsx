@@ -42,38 +42,39 @@ export function GallerySection() {
             पूजन की वीडियो झलक
           </Button>
         </div>
-        <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
+        <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {galleryImages.map((item, i) => (
             <button
               key={item.src}
               type="button"
               aria-label={`${item.caption} — बड़ा चित्र खोलें`}
               onClick={() => setSelected(i)}
-              className="group relative mb-5 block w-full break-inside-avoid overflow-hidden rounded-xl text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              className="group flex h-full min-w-0 flex-col rounded-2xl border border-gold/60 bg-cream p-3 text-left shadow-lg shadow-black/15 transition-transform duration-300 hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-saffron motion-reduce:transform-none sm:p-4"
             >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={item.width}
-                height={item.height}
-                sizes={
-                  i === 0
-                    ? "(max-width: 1024px) 90vw, 560px"
-                    : "(max-width: 640px) 45vw, 300px"
-                }
-                className="h-auto w-full"
-              />
-              <span className="absolute inset-0 bg-linear-to-t from-wine-dark/75 via-transparent to-transparent" />
-              <span className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 text-xs leading-6 text-cream sm:bottom-5 sm:left-5">
-                {item.caption}
-                <Expand
-                  aria-hidden="true"
-                  className="mb-1 size-4 shrink-0 opacity-75"
-                />
+              <span className="relative block aspect-square w-full overflow-hidden rounded-lg border border-gold/40 bg-secondary p-3 sm:p-4">
+                <span className="relative block h-full w-full">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 42vw, 350px"
+                    className="object-contain drop-shadow-md"
+                  />
+                </span>
+                <span className="absolute right-3 bottom-3 flex size-9 items-center justify-center rounded-full border border-gold/40 bg-cream/95 text-wine shadow-sm transition-colors group-hover:bg-wine group-hover:text-cream group-focus-visible:bg-wine group-focus-visible:text-cream">
+                  <Expand aria-hidden="true" className="size-4" />
+                </span>
+              </span>
+              <span className="flex flex-1 items-center gap-3 px-1 pt-4 pb-2 sm:pt-5">
+                <span aria-hidden="true" className="flex size-8 shrink-0 items-center justify-center rounded-full border border-gold/40 text-[11px] font-medium text-primary">
+                  {new Intl.NumberFormat("hi-IN-u-nu-deva", { minimumIntegerDigits: 2 }).format(i + 1)}
+                </span>
+                <span className="font-heading text-sm leading-7 font-medium text-wine">{item.caption}</span>
               </span>
             </button>
           ))}
         </div>
+        <p className="mt-8 text-center text-xs leading-7 text-cream/65">हर तस्वीर में एक शुभ संकल्प। बड़े आकार में देखने के लिए चित्र चुनें।</p>
         <Dialog
           open={selected !== null}
           onOpenChange={(open) => {
@@ -100,7 +101,7 @@ export function GallerySection() {
               </DialogClose>
             </div>
             {image && (
-              <div className="relative h-[60dvh] w-full">
+              <div className="relative h-[60dvh] w-full overflow-hidden rounded-xl border border-gold/30 bg-secondary/60">
                 <Image
                   src={image.src}
                   alt={image.alt}

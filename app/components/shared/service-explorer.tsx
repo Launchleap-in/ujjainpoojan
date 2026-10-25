@@ -8,11 +8,11 @@ import { cn } from "@/lib/utils";
 
 const categories: { label: string; ids: ServiceId[] | null }[] = [
   { label: "सभी सेवाएँ", ids: null },
-  { label: "दोष शांति", ids: ["mangal-shanti", "kaal-sarp", "angarak-dosh", "pitra-dosh", "grahan-dosh", "guru-chandal"] },
+  { label: "दोष शांति", ids: ["mangal-shanti", "kaal-sarp", "angarak-dosh", "pitra-dosh", "grahan-dosh", "guru-chandal", "pishach-dosh", "shrapit-dosh"] },
   { label: "ग्रह आराधना", ids: ["bhat-puja", "navgrah-shanti", "shani-shanti"] },
   { label: "नक्षत्र शांति", ids: ["gand-mool-shanti"] },
   { label: "शिव आराधना", ids: ["rudrabhishek", "mahamrityunjay"] },
-  { label: "विशेष अनुष्ठान", ids: ["nav-chandi"] },
+  { label: "विशेष अनुष्ठान", ids: ["nav-chandi", "ark-vivah", "kumbh-vivah"] },
   { label: "कुंडली परामर्श", ids: ["kundli-paramarsh"] },
 ];
 

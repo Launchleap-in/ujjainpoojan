@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight, MapPin, Flower2 } from "lucide-react";
-import { footerData, navigation, services } from "@/app/data/data";
+import { ArrowUpRight, MapPin, Flower2, Phone, Mail } from "lucide-react";
+import { contactData, footerData, navigation, services } from "@/app/data/data";
 import { Brand, container } from "@/app/components/shared/design";
 
 export function Footer() {
@@ -53,10 +53,16 @@ export function Footer() {
           <h2 className="mb-6 font-heading text-lg">तैयारी एवं संपर्क</h2>
           <p className="flex items-start gap-2 text-sm leading-7 text-cream/65">
             <MapPin className="mt-1 size-4 shrink-0 text-saffron" />
-            मंगलनाथ, उज्जैन
-            <br />
-            मध्य प्रदेश, भारत
+            {contactData.address}
           </p>
+          <a href={`tel:${contactData.phone.replace(/[^+\d]/g, "")}`} className="mt-5 flex min-h-11 items-center gap-2 text-sm text-cream/75 hover:text-saffron">
+            <Phone aria-hidden="true" className="size-4 shrink-0 text-saffron" />
+            {contactData.phone}
+          </a>
+          <a href={`mailto:${contactData.email}`} className="mt-2 flex min-h-11 items-start gap-2 text-sm leading-7 text-cream/75 hover:text-saffron">
+            <Mail aria-hidden="true" className="mt-1 size-4 shrink-0 text-saffron" />
+            <span className="min-w-0 break-all">{contactData.email}</span>
+          </a>
           <Link
             href="/preparation"
             className="mt-5 block text-sm text-cream/65 hover:text-saffron"

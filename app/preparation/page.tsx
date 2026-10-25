@@ -61,7 +61,7 @@ export default function PreparationPage() {
           <MapPin className="mb-4 size-7 text-primary" />
           <h2>स्थान और पहुँचने के समय की पुष्टि</h2>
           <p>
-            मंगलनाथ, उज्जैन में पूजा का सटीक स्थान और मिलने का बिंदु पहले
+            अंगारेश्वर महादेव मंदिर, मंगलनाथ मार्ग, उज्जैन में पूजा का सटीक स्थान और मिलने का बिंदु पहले
             सुनिश्चित करें। यात्रा, आवास और स्थानीय आवागमन की योजना पूजा के समय
             के साथ बनाएँ।
           </p>
@@ -71,12 +71,12 @@ export default function PreparationPage() {
             सदस्यों को भी समय बताएँ।
           </p>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Mangalnath+Temple+Ujjain"
+            href="https://www.google.com/maps/search/?api=1&query=Angareshwar+Mahadev+Mandir+Mangalnath+Marg+Ujjain"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4"
           >
-            मानचित्र पर मंगलनाथ देखें ↗
+            मानचित्र पर अंगारेश्वर महादेव मंदिर देखें ↗
           </a>
         </section>
         <section id="clothes">

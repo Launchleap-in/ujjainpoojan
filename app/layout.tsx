@@ -3,6 +3,7 @@ import { sans, heading } from "@/lib/fonts";
 import { siteInfo } from "@/app/data/data";
 import { Header } from "@/app/components/layout/header";
 import { Footer } from "@/app/components/layout/footer";
+import { WhatsAppButton } from "@/app/components/layout/whatsapp-button";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

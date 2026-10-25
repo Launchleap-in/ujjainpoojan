@@ -10,3 +10,5 @@ export const publicContact: {
   whatsapp: contactData.whatsapp,
   email: contactData.email,
 };
+
+export const whatsappHref = `https://wa.me/${contactData.whatsapp}?text=${encodeURIComponent("नमस्ते पंडित जी, मुझे उज्जैन में पूजा की विधि, तैयारी और उपलब्धता की जानकारी चाहिए।")}`;

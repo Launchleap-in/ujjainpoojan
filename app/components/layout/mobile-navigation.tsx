@@ -40,7 +40,7 @@ export function MobileNavigation() {
           <NavigationLinks mobile onNavigate={() => setOpen(false)} />
         </nav>
         <p className="mt-auto text-xs text-muted-foreground">
-          पंडित दीपक शर्मा · १५ वर्षों का अनुभव<br />मंगलनाथ, उज्जैन, मध्य प्रदेश
+          पंडित दीपक शर्मा · १५ वर्षों का अनुभव<br />अंगारेश्वर महादेव मंदिर, उज्जैन, मध्य प्रदेश
         </p>
       </SheetContent>
     </Sheet>

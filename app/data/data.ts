@@ -30,7 +30,7 @@ export const siteInfo = {
     "मंगलनाथ उज्जैन में मंगल शांति, भात पूजा, कालसर्प पूजा, नवग्रह शांति और कुंडली परामर्श। पूजा विधि, तैयारी और बुकिंग की जानकारी के लिए संपर्क करें।",
   language: "हिन्दी",
   locale: "hi-IN",
-  location: "मंगलनाथ, उज्जैन, मध्य प्रदेश",
+  location: "अंगारेश्वर महादेव मंदिर, मंगलनाथ मार्ग, उज्जैन, मध्य प्रदेश",
 } as const;
 
 export const navigation = [
@@ -726,10 +726,10 @@ export const contactData = {
   description:
     "अपना संकल्प, पसंद की पूजा और तिथि बताएँ, ताकि उपलब्धता तथा व्यवस्था पर चर्चा की जा सके।",
   location: siteInfo.location,
-  phone: null,
-  whatsapp: null,
-  email: null,
-  address: null,
+  phone: "+91 7247081171",
+  whatsapp: "917247081171",
+  email: "panditpoojanujjainoffical@gmail.com",
+  address: "अंगारेश्वर महादेव मंदिर, मंगलनाथ मार्ग, उज्जैन, मध्य प्रदेश",
   enquiryNotice:
     "यह पूजा के लिए पूछताछ है। बुकिंग उपलब्धता और व्यवस्था की पुष्टि के बाद होगी।",
   form: {

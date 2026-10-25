@@ -157,7 +157,7 @@ export function LocationLabel({ light = false }: { light?: boolean }) {
       )}
     >
       <MapPin aria-hidden="true" className="size-3.5" />
-      मंगलनाथ, उज्जैन
+      अंगारेश्वर महादेव मंदिर, उज्जैन
     </span>
   );
 }

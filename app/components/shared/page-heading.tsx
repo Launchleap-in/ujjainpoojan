@@ -67,7 +67,7 @@ export function PageHeading({
           </div>
         )}
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-gold/20 pt-5 text-xs leading-6 text-cream/65">
-          <span className="flex items-center gap-2"><MapPin aria-hidden="true" className="size-3.5 text-saffron" />मंगलनाथ, उज्जैन</span>
+          <span className="flex items-center gap-2"><MapPin aria-hidden="true" className="size-3.5 text-saffron" />अंगारेश्वर महादेव मंदिर, उज्जैन</span>
           <span>पंडित दीपक शर्मा · १५ वर्षों का अनुभव</span>
         </div>
       </div>

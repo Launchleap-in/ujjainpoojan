@@ -39,7 +39,7 @@ export default function AboutPage() {
           </div>
           <figcaption className="px-5 py-5 text-cream">
             <p className="font-heading text-xl leading-9 font-semibold">पंडित दीपक शर्मा</p>
-            <p className="mt-1 text-sm text-saffron">१५ वर्षों का अनुभव · मंगलनाथ, उज्जैन</p>
+            <p className="mt-1 text-sm text-saffron">१५ वर्षों का अनुभव · अंगारेश्वर महादेव मंदिर, उज्जैन</p>
           </figcaption>
         </figure>
         <div>

@@ -71,7 +71,7 @@ export default function PreparationPage() {
             सदस्यों को भी समय बताएँ।
           </p>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Angareshwar+Mahadev+Mandir+Mangalnath+Marg+Ujjain"
+            href="https://www.google.com/maps?cid=16557046453918187572&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-4"

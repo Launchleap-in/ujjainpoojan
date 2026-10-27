@@ -61,9 +61,9 @@ export default function ContactPage() {
               <div className="flex items-start gap-5">
                 <span className="flex size-13 shrink-0 items-center justify-center rounded-2xl bg-card text-primary"><MapPin aria-hidden="true" className="size-6" /></span>
                 <div>
-                  <h2 className="font-heading text-xl leading-9 font-semibold text-wine">अंगारेश्वर महादेव मंदिर</h2>
-                  <p className="mt-1 text-sm leading-7 text-muted-foreground">मंगलनाथ मार्ग, उज्जैन, मध्य प्रदेश</p>
-                  <a href="https://www.google.com/maps/search/?api=1&query=Angareshwar+Mahadev+Mandir+Mangalnath+Marg+Ujjain" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary">मानचित्र पर देखें <ArrowUpRight aria-hidden="true" className="size-4" /></a>
+                  <h2 className="font-heading text-xl leading-9 font-semibold text-wine">{contactData.locationName}</h2>
+                  <p className="mt-1 text-sm leading-7 text-muted-foreground">{contactData.address}</p>
+                  <a href="https://www.google.com/maps?cid=16557046453918187572&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary">मानचित्र पर देखें <ArrowUpRight aria-hidden="true" className="size-4" /></a>
                 </div>
               </div>
             </div>
